@@ -1,0 +1,26 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWppdCIsImlhdCI6MTc2NzI5MTQ1MSwiZXhwIjoxNzY3MjkxNDY2fQ.b4M2E1J2E2zq9vFWnReU6-2CPy5UM6UEa4Pm9zZsXHI
+
+
+
+###
+DELETE http://localhost:4000/logout 
+Content-Type: application/json
+
+{
+    "refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWppdCIsImlhdCI6MTc2NzI5MjAzNX0.1RNjNyjgGBku-N_jJiuG11oz0Uu4F0pSmaOICzoHMpc"
+}
+### 
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWppdCIsImlhdCI6MTc2NzI5MjAzNX0.1RNjNyjgGBku-N_jJiuG11oz0Uu4F0pSmaOICzoHMpc"
+}
+### 
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"ajit"
+}
