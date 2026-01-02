@@ -1,11 +1,5 @@
 # auth-using-NodeJs
 
-Here is the **merged README + auth flow diagram** (clean & concise):
-
----
-
-# auth-using-NodeJs
-
 This project demonstrates **JWT-based authentication** using **two servers**:
 
 1. **Auth Server** – handles authentication & token management
